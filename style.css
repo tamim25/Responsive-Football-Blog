@@ -83,14 +83,23 @@ header{
     font-weight: 400;
 }
 /* Blog Contents */
+.blog{
+    margin-top: 120px;
+}
 .blog-contents img{
     width: 100%;
+}
+.news{
+    text-align: center;
+    font-size: 60px;
+    color: slateblue;
 }
 .blog-contents{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    
 }
 .highlights{
     width: 37%;
@@ -111,4 +120,35 @@ header{
 }
 .icon img{
     width: 2%;
+}
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    header{
+        height: 600px;
+        overflow: hidden;
+    }
+    .header-part{
+        display: block;
+    }
+    .half-width{
+        margin: 0;
+        width: auto;
+        margin: 40px;
+        margin-bottom: 44px;
+    }
+    .half-width h1{
+        font-size: 44px;
+        color: white;
+        line-height: 51px;
+        font-style: normal;
+    }
+    .half-width img {
+        width: 100%;
+    }
+    .players-box{
+        display: grid;
+        grid-template-columns: repeat(1,100px);
+        justify-content: start;
+    }
 }
